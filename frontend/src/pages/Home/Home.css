@@ -1,4 +1,3 @@
-
 .home-header {
     background: linear-gradient(100deg,#FF8C00, #FFA500);
     width: 100vw;
@@ -6,12 +5,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
 .home-container {
-    background: black
+    background: black;
 }
+
+.header-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid #FFA500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .header-btn:hover {
     border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .home-heading {
@@ -48,6 +68,7 @@
     position: absolute;
     left: 38vw;
     top: 60vh;
+    text-align: center;
 }
 
 .btn{
@@ -63,6 +84,7 @@
     border-width: 4px;
     cursor: pointer;
 }
+
 .btn:hover {
     background: rgba(255,165,0, 0.2);
     color: white;
@@ -71,17 +93,84 @@
 body::-webkit-scrollbar {
     display: none;
 }
-#about-btn {
+
+#login-btn, #register-btn, #profile-btn {
     padding: 5px 10px;
+    font-size: 18px;
 }
-#about-btn:hover {
+
+#login-btn:hover, #register-btn:hover, #profile-btn:hover {
     border-color: white;
     background-color: white;
     color: black;
 }
-#about-btn:focus {
+
+#login-btn:focus, #register-btn:focus, #profile-btn:focus {
     box-shadow: none;
     background: white;
     border-color: white;
     color: black;
+}
+
+.auth-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: auto;
+    white-space: nowrap;
+}
+
+.start-pose-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background-color: #CD853F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-pose-button:hover {
+    background-color: #8B4513;
+}
+
+/* Style for all header buttons */
+.btn.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FFA500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+.btn.btn-secondary:hover {
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+/* Specific styles for profile button */
+#profile-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #FFA500;
+    font-weight: 500;
 }

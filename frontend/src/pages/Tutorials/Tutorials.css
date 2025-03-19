@@ -1,23 +1,64 @@
 .tutorials-container {
-    width: 100vw;
-    height: 100vh;
     background: linear-gradient(100deg, #FF8C00, #FFA500);
-}
-.tutorials-heading {
-    font-size: 54px;
-    margin-left: 100px;
-    padding-top: 50px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
 }
 
-.tutorials-content {
+.tutorials-heading {
+    color: white;
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-list {
+    max-width: 900px;
+    margin: 0 auto;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.tutorial-item {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.camera-section {
+    margin-top: 60px;
+}
+
+.camera-heading {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.solution-list {
+    max-width: 900px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.solution-item {
     color: white;
     font-size: 18px;
-    margin: auto;
-    margin-left: 100px;
-    margin-top: 4px;
-}
-.tutorials-content-container {
-    width: 70%;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
